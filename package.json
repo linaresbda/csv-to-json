@@ -1,0 +1,22 @@
+{
+  "name": "csv-to-json",
+  "version": "1.0.0",
+  "description": "Proceso que convierte un CSV a JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linaresbda/csv-to-json.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linaresbda/csv-to-json/issues"
+  },
+  "homepage": "https://github.com/linaresbda/csv-to-json#readme",
+  "dependencies": {
+    "neat-csv": "^5.2.0"
+  }
+}
