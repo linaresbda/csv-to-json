@@ -2,7 +2,6 @@ const fs = require('fs');
 const readline = require('readline');
 const neatCsv = require('neat-csv');
 
-
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -16,7 +15,18 @@ rl.question('File name CSV: ', (path) => {
       console.error(err)
       return
     }
-    let result = await neatCsv(data);
+    let result = await neatCsv(data, {
+      mapValues: ({ header, index, value }) => {
+        if (header === "isValid") {
+          return (value == "true");
+        }
+        if (header === "Age") {
+          return Number(value);
+        } else {
+          return value;
+        }
+      }
+    });
     try {
       fs.writeFileSync(outFileName, JSON.stringify(result));
       console.log(`The file out.json was generated`);

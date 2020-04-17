@@ -1,1 +1,18 @@
-[{"Name":"Diego","Phone":"52477123456","Address":"Avenida siempre viva","Nickname":"dlinares"},{"Name":"Antonio","Phone":"52477123455","Address":"Avenida siempre viva","Nickname":"alinares"}]
+[
+  {
+    "Name": "Diego",
+    "Phone": "52477123456",
+    "Address": "Avenida siempre viva",
+    "Nickname": "dlinares",
+    "Age": 30,
+    "isValid": true
+  },
+  {
+    "Name": "Antonio",
+    "Phone": "52477123455",
+    "Address": "Avenida siempre viva",
+    "Nickname": "alinares",
+    "Age": 29,
+    "isValid": false
+  }
+]
